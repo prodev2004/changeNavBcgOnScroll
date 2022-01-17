@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Change Navbar's Background Color On Scroll</title>
+    <!-- Source Code in the description -->
+</head>
+<body>
+    <nav>
+        <h1 class="logo">ALB Dev</h1>
+        <div class="nav_links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Work</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <section></section>
+    <section></section>
+
+    <script>
+        const nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 50) {
+                nav.classList.add('active_nav');
+            } else {
+                nav.classList.remove('active_nav');
+            }
+        })
+    </script>
+</body>
+</html>
+
+<!-- and it works perfectly -->
+<!-- I'll also add some transition -->
